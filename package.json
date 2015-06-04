@@ -11,8 +11,7 @@
     "test-only": "./node_modules/.bin/_mocha -- -R spec",
     "pretest": "npm run-script lint",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
-    "posttest": "./node_modules/.bin/istanbul check-coverage",
-    "prepublish": "npm test && npm prune"
+    "posttest": "./node_modules/.bin/istanbul check-coverage"
   },
   "repository": {
     "type": "git",
