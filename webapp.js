@@ -37,7 +37,10 @@ module.exports = function (context, done) {
         })
 
         externalReq.on('error', function (err) {
-          console.error('[badge] error occured when requesting badge from https://img.shields.io/' + badgeUrl + '. ' + err);
+          var message = '[badge] error occured when requesting badge from https://img.shields.io/';
+          message += badgeUrl + '. ';
+          message += err;
+          console.error(message);
 
           // fallback to the image
           res.sendfile(path.join(__dirname, 'images', 'build_' + status.label + '.png'));
