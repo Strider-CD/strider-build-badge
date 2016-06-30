@@ -24,4 +24,8 @@ These look like:
 
 ![unknown](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)
 
-They are accessed by going to: http://my-strider-instance/org/repo/badge?branch=master&style=shield
+They are accessed by going to: http://my-strider-instance/org/repo/badge?branch=master&service=shield&style=flat-square
+
+#### Querystring options
+
+**style**: one of `plastic`, `flat`, `flat-square` or `social`
