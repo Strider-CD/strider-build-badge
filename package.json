@@ -30,9 +30,9 @@
     "webapp": "webapp.js"
   },
   "devDependencies": {
-    "mocha": "~1.15.1",
-    "expect.js": "~0.2.0",
-    "istanbul": "~0.1.45",
-    "jshint": "~2.1.9"
+    "mocha": "~2.5.3",
+    "expect.js": "~0.3.1",
+    "istanbul": "~0.4.4",
+    "jshint": "~2.9.2"
   }
 }
