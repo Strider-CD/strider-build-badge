@@ -1,2 +1,7 @@
-node_modules
-coverage
+# Code coverage results
+coverage/
+
+# npm modules
+node_modules/
+
+npm-debug.log

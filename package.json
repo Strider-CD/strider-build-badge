@@ -7,9 +7,9 @@
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "lint": "node_modules/.bin/jshint .",
+    "lint": "eslint *.js lib",
     "test-only": "node_modules/mocha/bin/_mocha -- -R spec",
-    "pretest": "npm run-script lint",
+    "pretest": "npm run lint",
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
     "posttest": "istanbul check-coverage"
   },
@@ -21,8 +21,11 @@
     "strider",
     "plugin"
   ],
+  "engines": {
+    "node": ">=4.2"
+  },
   "author": "Adam Duncan <adam.jd@gmail.com>",
-  "license": "BSD",
+  "license": "MIT",
   "strider": {
     "type": "basic",
     "id": "buildbadge",
@@ -30,9 +33,9 @@
     "webapp": "webapp.js"
   },
   "devDependencies": {
-    "mocha": "~2.5.3",
+    "eslint": "^3.1.1",
     "expect.js": "~0.3.1",
     "istanbul": "~0.4.4",
-    "jshint": "~2.9.2"
+    "mocha": "~2.5.3"
   }
 }
